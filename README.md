@@ -74,9 +74,9 @@ bellande_python_executable script.py \
 
 ### Command Line Options
 
-- `script` - Python script to convert (required)
-- `-o, --output` - Output executable name
-- `-n, --name` - Name of the executable
+- `--script` - Python script to convert (required)
+- `--output` - Output executable name
+- `--name` - Name of the executable
 - `--onefile` - Create a single executable file (default)
 - `--windowed` - Create windowed application (no console)
 - `--debug` - Enable debug mode
@@ -114,7 +114,7 @@ if __name__ == "__main__":
 ```
 
 ```bash
-bellande_python_executable web_scraper.py --include requests --include bs4
+bellande_python_executable --script web_scraper.py --include requests --include bs4
 ./dist/web_scraper
 ```
 
@@ -134,7 +134,7 @@ if __name__ == "__main__":
 ```
 
 ```bash
-bellande_python_executable config_app.py --add-data "config.json:."
+bellande_python_executable --script-file config_app.py --add-data "config.json:."
 ./dist/config_app
 ```
 

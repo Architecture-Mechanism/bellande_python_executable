@@ -7,9 +7,9 @@ from header_imports import *
 
 def main():
     parser = argparse.ArgumentParser(description='Convert Python scripts to executables')
-    parser.add_argument('-script', help='Python script or file to convert')
-    parser.add_argument('-o', '--output', help='Output executable name')
-    parser.add_argument('-n', '--name', help='Name of the executable')
+    parser.add_argument('--script_file', help='Python script or file to convert')
+    parser.add_argument('--output', help='Output executable name')
+    parser.add_argument('--name', help='Name of the executable')
     parser.add_argument('--onefile', action='store_true', help='Create a single executable file')
     parser.add_argument('--windowed', action='store_true', help='Create windowed application (no console)')
     parser.add_argument('--debug', action='store_true', help='Enable debug mode')
@@ -23,7 +23,7 @@ def main():
     logger = Logger(debug=args.debug)
     
     # Validate input script
-    script_path = Path(args.script)
+    script_path = Path(args.script_file)
     if not script_path.exists():
         logger.error(f"Script not found: {script_path}")
         sys.exit(1)
