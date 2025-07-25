@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 PyPack - A Python to executable converter
 Main entry point for the application
