@@ -13,8 +13,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from bellande_python_executable.analyzer import *
-from bellande_python_executable.collector import *
-from bellande_python_executable.compiler import *
-from bellande_python_executable.builder import *
-from bellande_python_executable.utilities import *
+from analyzer import *
+from collector import *
+from compiler import *
+from builder import *
+from utilities import *

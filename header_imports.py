@@ -15,8 +15,8 @@
 
 # Contain Everything
 import sys
-sys.path.append("header_imports/")
-sys.path.append("src/")
+sys.path.append("header_imports")
+sys.path.append("src/bellande_python_executable")
 
 # Header Initialization
 from header_imports_python_library import *
